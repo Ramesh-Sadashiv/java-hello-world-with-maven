@@ -6,6 +6,18 @@
     <artifactId>jb-hello-world-maven</artifactId>
     <packaging>war</packaging>
     <version>0.2.0</version>
+    <build>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-war-plugin</artifactId>
+            <version>3.4.0</version>
+            <configuration>
+                <failOnMissingWebXml>false</failOnMissingWebXml>
+            </configuration>
+        </plugin>
+    </plugins>
+</build>
 
     <!-- tag::joda[] -->
      <properties>
